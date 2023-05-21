@@ -1,98 +1,122 @@
 body {
-  background: rgb(253, 126, 29);
-  background: linear-gradient(
-    90deg,
-    rgba(253, 126, 29, 1) 0%,
-    rgba(252, 176, 69, 1) 100%
-  );
-}
-main {
-  margin: 0px auto;
-  width: 720px;
+  background: rgba(176, 181, 252, 0.342);
+  height: 100%;
   display: flex;
+  justify-content: center;
 }
 
-section {
+.contenedor {
+  width: 80%;
+  height: 500px;
   border: 1px solid black;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 720px;
+  border-radius: 10%;
+  background-color: rgba(26, 96, 201, 0.9);
+  margin-top: 2.5%;
+}
+
+.main {
+  margin: 0px auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario_titulo {
   text-align: center;
+  font-size: 100%;
 }
 
 .jugar {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: 120px;
   margin: 0px auto 0px;
+  width: 100px;
 }
 
 .empezarPartida {
   width: 80%;
+  height: 30%;
+  align-self: center;
+  color: white;
+  background-color: navy;
+  border-radius: 30%;
 }
 
 .input {
   display: flex;
-  margin: 70px auto 0px;
-  width: 720px;
-  height: 150px;
-  font-size: 20px;
-  padding-bottom: 20px;
-  justify-content: center;
+  margin: 2.5% auto 0px;
+  width: 90%;
+  height: 15%;
+  padding-bottom: 2.5%;
+  justify-content: space-around;
 }
 
 .formualrio_box {
-  width: 200px;
+  width: 60%;
+  height: 75%;
 }
-
-.formualrio {
-  align-content: space-between;
-  justify-content: center;
-  padding-bottom: 100px;
+.lugarDeInputs {
+  height: 30%;
 }
 
 .enviar {
-  width: 100px;
-  height: 40px;
+  width: 30%;
+  height: 100%;
+  font-size: 100%;
+  color: white;
 }
-input {
-  width: 100px;
-  height: 40px;
-}
+
 .section1 {
-  padding: 20px;
-  border: 1px solid black;
+  align-content: center;
+  width: 70%;
+  height: 350px;
+  padding: 1%;
+  font-size: 10px;
 }
 .section2 {
-  height: 600px;
-  width: 300px;
+  width: 30%;
+  height: 350px;
+  padding: 5%;
+}
+
+table {
+  display: flex;
+  justify-content: center;
 }
 
 .stats {
-  height: 150px;
+  height: 75px;
+  font-size: 40px;
 }
+
 h3 {
-  text-align: justify;
+  text-align: center;
 }
+
+.tituloL {
+  font-size: 100%;
+}
+
 .leaderboard {
   text-align: center;
-  font-size: 15px;
   color: cyan;
+  font-size: 10px;
   background-color: black;
-  height: 415px;
+  height: 220px;
+  padding: 0;
 }
 h1 {
   text-align: center;
   font: "Aclonica";
-  font-size: 44px;
+  font-size: 100%;
 }
 
 button {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 70px;
+  background-color: black;
+  border: none;
 }
 
 img {
@@ -101,4 +125,127 @@ img {
 }
 button:hover {
   cursor: pointer;
+}
+
+h2 {
+  font-size: 40%;
+}
+
+.tituloJ {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 987px) {
+  .stats {
+    font-size: 40px;
+  }
+
+  .tituloL {
+    font-size: 100%;
+  }
+  .tituloJ {
+    font-size: 350%;
+  }
+  .leaderboard {
+    text-align: center;
+    justify-items: center;
+    color: cyan;
+    font-size: 60%;
+    background-color: black;
+    height: 70%;
+    padding: 0;
+  }
+  .formulario_titulo {
+    text-align: center;
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .stats {
+    font-size: 40px;
+  }
+  .tituloJ {
+    font-size: 300%;
+  }
+  .leaderboard {
+    text-align: center;
+    justify-items: center;
+    color: cyan;
+    font-size: 10px;
+    background-color: black;
+    height: 200px;
+    padding: 0;
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .stats {
+    font-size: 35px;
+  }
+
+  .tituloL {
+    font-size: 10px;
+  }
+
+  .leaderboard {
+    text-align: center;
+    justify-items: center;
+    color: cyan;
+    font-size: 6.5px;
+    background-color: black;
+    height: 189px;
+    padding: 0;
+  }
+
+  .tituloJ {
+    font-size: 250%;
+  }
+  .formulario_titulo {
+    text-align: center;
+    font-size: 100%;
+  }
+  button {
+    height: 60px;
+    width: 45px;
+  }
+  .enviar {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .stats {
+    font-size: 35px;
+  }
+
+  .tituloL {
+    font-size: 8px;
+  }
+
+  .leaderboard {
+    text-align: center;
+    justify-items: center;
+    color: cyan;
+    font-size: 5px;
+    background-color: black;
+    height: 150px;
+    padding: 0;
+  }
+
+  .tituloJ {
+    font-size: 250%;
+  }
+  .formulario_titulo {
+    text-align: center;
+    font-size: 100%;
+  }
+  button {
+    height: 50px;
+    width: 30px;
+  }
+  .enviar {
+    font-size: 10px;
+  }
 }

@@ -26,6 +26,7 @@ function iniciarPagina() {
     tarjeta.innerHTML = "<img src = './images/0.png' alt = ''>";
     tarjeta.disabled = true;
   }
+  cargar_datos();
   imprimirLeaderboard();
 }
 
@@ -116,6 +117,7 @@ function voltear(id) {
     ranking.push(puntuacion);
     imprimirLeaderboard();
     partidaEnCurso = false;
+    guardar_datos();
   }
 }
 
@@ -154,6 +156,16 @@ function empezarPartida() {
     scoreBox.innerHTML = "Score: N/R";
     cajaAdivinadas.innerHTML = "Adivinadas: 0";
   }
+}
+
+function cargar_datos() {
+  if (localStorage.getItem("usuariosRegistrados") != null) {
+    ranking = JSON.parse(localStorage.getItem("usuariosRegistrados"));
+  }
+}
+
+function guardar_datos() {
+  localStorage.setItem("usuariosRegistrados", JSON.stringify(ranking));
 }
 
 iniciarPagina();

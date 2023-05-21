@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Proyecto Andres Martin</title>
+    
   </head>
   <body>
+    <div class="contenedor">
     <section class="input">
         <div id="form" class="formulario">
             <h3 class="formulario_titulo">Ingresa tu nombre de usuario</h3>
-            <input id ="username" type="text" class ="formualrio_box">
-            <button class="enviar" onclick=guardar_inputs()>Enviar</button>
+            <div class="lugarDeInputs">
+                <input id ="username" type="text" class ="formualrio_box">
+                <button class="enviar" onclick=guardar_inputs()>Enviar</button>
+            </div>
+        </div>
+        <div class="jugar">
+            <button class="empezarPartida" onclick=empezarPartida()>JUGAR</button>
         </div>
     </section>
-    <main>
-        
+    
+    <div class="main">
       <section class="section1">
-        <h1>GATOS UNIMET</h1>
+        <h1 class="tituloJ">🙀 UNIMET 🐈</h1>
         <table>
           <tr>
             <td>
@@ -55,7 +62,7 @@
           <h2 id="puntos" class="estadistica">Score: N/R</h2>
         </div>
         <div class="leaderboard">
-          <h2>LEADERBOARD 	&#127942</h2>
+          <h2 class ="tituloL">LEADERBOARD 	&#127942</h2>
             <h3 id="21"></h3>
             <h3 id="22"></h3>
             <h3 id="23"></h3>
@@ -63,10 +70,8 @@
             <h3 id="25"></h3>
         </div>
       </section>
-    </main>
-    <section class="jugar">
-        <button id="empezarPartida" onclick=empezarPartida()>JUGAR</button>
-    </section>
+    </div>
+
   </body>
   <script src="main.js"></script>
 </html>
