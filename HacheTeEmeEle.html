@@ -8,9 +8,17 @@
     <title>Document</title>
   </head>
   <body>
+    <section class="input">
+        <div id="form" class="formulario">
+            <h3 class="formulario_titulo">Ingresa tu nombre de usuario</h3>
+            <input id ="username" type="text" class ="formualrio_box">
+            <button class="enviar" onclick=guardar_inputs()>Enviar</button>
+        </div>
+    </section>
     <main>
+        
       <section class="section1">
-        <h1>MEMORIA UNIMET</h1>
+        <h1>GATOS UNIMET</h1>
         <table>
           <tr>
             <td>
@@ -41,10 +49,24 @@
         </table>
       </section>
       <section class="section2">
-        <h2 id="timer" class="estaditica">Tiempo: 180</h2>
-        <h2 id="adivinadas" class="estaditica">Adivinadas: 0</h2>
+        <div class="stats">
+          <h2 id="timer" class="estaditica">Tiempo: 180</h2>
+          <h2 id="adivinadas" class="estaditica">Adivinadas: 0</h2>
+          <h2 id="puntos" class="estadistica">Score: N/R</h2>
+        </div>
+        <div class="leaderboard">
+          <h2>LEADERBOARD 	&#127942</h2>
+            <h3 id="21"></h3>
+            <h3 id="22"></h3>
+            <h3 id="23"></h3>
+            <h3 id="24"></h3>
+            <h3 id="25"></h3>
+        </div>
       </section>
     </main>
+    <section class="jugar">
+        <button id="empezarPartida" onclick=empezarPartida()>JUGAR</button>
+    </section>
   </body>
   <script src="main.js"></script>
 </html>
