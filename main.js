@@ -34,6 +34,8 @@ function iniciarPagina() {
 function guardar_inputs() {
   let usuario = document.getElementById("username");
   usuarioActual = usuario.value;
+  let camobio = document.getElementById("radarada");
+  camobio.innerHTML = "Estas jugando como " + usuarioActual;
   console.log(usuarioActual);
   iniciarPagina();
 }
